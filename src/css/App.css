@@ -1,0 +1,19 @@
+.App {
+  text-align: center;
+}
+
+.WelcomeScreen {
+  height: 100vh;
+  background-color: #40474e;
+  color: white;
+}
+
+.Form {
+  height: 100vh;
+}
+
+.RenderGraphHidden {
+  min-height: 1vh;
+  background-color: white;
+
+}

@@ -1,0 +1,11 @@
+const url1="https://www.reddit.com/r/redditdev/comments/c5qxpm/getting_all_comments.json"
+const url2="https://www.reddit.com/r/aww/comments/mrqmjf/dog_broke_his_ankle_jumping_into_the_boat_dad.json"
+const url3="https://www.reddit.com/r/Minecraft.json"
+const url4="https://www.reddit.com/r/nottheonion/comments/n1fjac/joe_rogan_walks_back_antivaccination_comments_im.json"
+const url6="https://www.reddit.com/r/movies.json"
+const url7="https://www.reddit.com/r/movies/new.json"
+
+
+<NaturalAnalysis comment={[newComments, props.url[1]]}></NaturalAnalysis>
+
+ <NaturalAnalysis comment={[allSubs, props.url[1]]}></NaturalAnalysis>

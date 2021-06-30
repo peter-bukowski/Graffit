@@ -1,6 +1,8 @@
 # Graffitt
 
 Graffit is a data analysis application that takes data from Reddit via API and returns graphs or raw data of particular pages. The user can paste any link from thread,subreddit or post and be able to choose from multiple graphs to receive analysis from.
+
+
 Features:
 
 

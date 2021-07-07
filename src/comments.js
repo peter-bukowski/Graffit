@@ -42,70 +42,17 @@ const Comments = (props) => {
     });
   }
 
-  //Triggers the comment extration when the url is updated.
+  
   useEffect(() => {
     getChar();
   }, [props.url[0]])
 
    
-  /*let newComments = [];
-  const [Comments, setComments] = useState([]);
-  const [Replies, setReplies] = useState([]);
-  const reply = [];
-  const allComments = [];
-  const commentDate=[]
-  const getChar = async () => {
-    fetch(props.url[0] + ".json?limit=50000")
-      .then((res) => res.json())
-      .then((data) => {
-        
-        data[1].data.children.forEach((element) => {
-          if (typeof element.data.replies !== "undefined") {
-            if (typeof element.data.replies.data !== "undefined") {
-              element.data.replies.data.children.forEach((child) => {
-                if (typeof child.data.body !== "undefined") {
-                  reply.push(child.data.body);
-                }
-              });
-            }
-          }
-        });
-        setComments(data[1].data.children);
-        setReplies(reply);
-      });
-  };
+  
 
-  useEffect(() => {
-    getChar();
-  }, [props]);
-
-  Comments.forEach((com) => {
-    allComments.push(com.data.body);
-  });
-
-   Comments.forEach((com) => {
-     if(com.data.body!==undefined){
-     const comDate={}
-     comDate.comment=com.data.body
-     comDate.date=new Date(com.data.created_utc*1000).toLocaleTimeString()
-     commentDate.push(comDate)
-     }
-  });
-
- 
- 
-  Replies.forEach((reply) => {
-    allComments.push(reply);
-  });
-
-  newComments = allComments.filter((comrep) => {
-    return comrep !== undefined;
-  });
-  */
-
-  //Only render if comments have been found
+  
   if(allCommentsData.length > 0){
-    //Render the appropriate visualization based on the graph type
+    
     if(props.url[2]==='overtime'){
     
          
@@ -131,7 +78,7 @@ const Comments = (props) => {
       );
     }
 }
-//Default return
+
 return (<div/>)
 }
 

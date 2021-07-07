@@ -19,11 +19,11 @@ import {createGraph} from "./Natural";
     }
   };
 
-  //Uses props to try to generate a graph.  By default provies a blank div.
+  
   const Network = (props) => {
     const [renderGraph, setRenderGraph] = useState(<div/>);
     
-    //Generates a graph based on the provided data
+    
      const generateGraph = async () => {
       var graphData = createGraph([props.graphData[0], props.graphData[1]])
       var nodes = [];
@@ -45,7 +45,7 @@ import {createGraph} from "./Natural";
         />);
      }
 
-     //Triggers a graph generation when the data is updated
+     
     useEffect(() => {
       generateGraph();
     }, [props.graphData[0], props.graphData[1]])

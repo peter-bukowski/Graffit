@@ -7,24 +7,17 @@ import domtoimage from 'dom-to-image';
 import { saveAs } from 'file-saver';
 
 const RenderGraph = ({ graphData }) => {
-  // hide download button, unhitten witn function handleSubmit onclick of submit button
+  
   window.onload = function() {
     var dButton = document.getElementById('downloadButton');
     dButton.style.visibility = 'hidden';
   };
 
-  // values passed from form.js
+  
   const { url, urlType, include, exclude, defaultExclude, graphType, render } = graphData;
   console.log(graphData);
 
-  // const getKeywordsInclude = (e) => {
-  //   e.preventDefault();
-  // };
-
-  // const getKeywordsExclude = (e) => {
-  //   const commonWordsExcludeArray = [, "the", "be", "to", "of", "and", "a", "of", "in", "that", "have"];
-  //   e.preventDefault();
-  // };
+ 
 
   const renderGraphSwitch = (urlType) => {
     switch (urlType) {
@@ -49,10 +42,7 @@ const RenderGraph = ({ graphData }) => {
     });
   }
 
-  // hide button until onclick submit
-  // var dButton = document.getElementById('downloadButton');
-  // dButton.style.visibility = 'hidden';
-
+ 
   return (
     <>
       <div id="graphPhoto" className="RenderGraph">

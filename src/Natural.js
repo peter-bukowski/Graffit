@@ -36,8 +36,7 @@ const NaturalAnalysis = (props) => {
   });
 
   map.forEach((value, key) => entires.push({ key: key, value: value }));
-  //console.log(graph.getAdjMap());
-  // TODO: decouple graph from natural
+  
   return (
     <>
       <div className="result">

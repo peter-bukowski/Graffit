@@ -37,19 +37,12 @@ const OverTime=(props)=>{
                      count+=1
                      numEl.frequency=count
                     allData[wordCount].push(numEl)
-                    // data01.push(numEl)
+                    
                      
                  }
             })
     })
-  /* const data01 = [
-  {word:"illgeal", hour: "10:13:44 PM", index: 1, comment: "Hello how are you? ",frequency: 1 },
-  {word:"illgeal", hour: "10:14:44 PM", index: 1, comment: "Hello how are you? ",frequency: 2 },
-  {word:"illgeal", hour: "10:15:44 PM", index: 1, comment: "Hello how are you? ",frequency: 3},
-  {word:"illgeal", hour: "10:16:44 PM", index: 1, comment: "Hello how are you? ",frequency: 3}
  
-
-]; */
 
 allData.forEach(elem=>console.log(elem))
 
